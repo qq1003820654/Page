@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
     <title>Title</title>
     <style>
         *{margin: 0px;padding: 0px;border: 0;}
@@ -22,7 +24,7 @@
         .wyyz{position:absolute;top:50%;left:58%;background: #FF5511;height:31px;width:87px; color: #FFFFFF;
             border: none;border-radius:5px;-webkit-border-radius:5px;-moz-border-radius:5px;font-size:20px}
 
-        .zhandui{left:40%;top:42%;width:20%;height: 16%;background:#ffcc00;text-align:center;}
+        .zhandui{left:40%;top:42%;width:20%;height:16%;background:#ffcc00;text-align:center;}
         .hei{left:10%;font-size:30px;color: #000000;}
         .qita{left:10%;font-size:30px;color: #000000;}
         .quxiao{left:10%;font-size:30px;color: #000000;}
@@ -58,13 +60,17 @@
     {
         document.getElementById('t2').style.display='block';
     }
+    function displayDate2()
+    {
+        document.getElementById('t3').style.display='block';
+    }
 
 
 </script>
 <div class="top">
     <div class="fanhui"><a href="#" class="fanhui1"onclick="fanhui()"><</a></div>
     <div class="zdzl">战队资料</div>
-    <div class="sz"><img src="shezhi.png" alt="#"></div>
+    <div class="sz"><a onclick="displayDate2()"><img src="shezhi.png" alt="#"></a></div>
 
 </div>
 <div class="photo">
@@ -74,7 +80,6 @@
     <button class="sqjr" onclick="displayDate()">申请加入</button>
     <button class="wyyz">我要约战</button>
 </div>
-
 <div id="t2" class="zhandui" style="display: none;">
     <ul>
         <li>
@@ -82,6 +87,19 @@
         </li>
         <li>
             <a class="qita" href="#">添加其他战队</a>
+        </li>
+        <li>
+            <a href="tu14.html" class="quxiao">取消</a>
+        </li>
+    </ul>
+</div>
+<div id="t3" class="zhandui" style="display: none;">
+    <ul>
+        <li>
+            <a class="hei" href="#">还原系统设置</a>
+        </li>
+        <li>
+            <a class="qita" href="#">进入设置页面</a>
         </li>
         <li>
             <a href="tu14.html" class="quxiao">取消</a>

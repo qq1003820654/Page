@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name=”viewport” content=”width=device-width,minimum-scale=1.0,maximum-scale=1.0,initial-scale=1.0″   user-scalable=no  />
+		<title>tu24</title>
+		<style type="text/css">
+			*{
+				margin: 0px;padding: 0px;border: 0;height: 100%;
+			}
+			body{
+				border: 1px solid #FFFFFF;
+				background: #000000;color: #FFFFFF;
+				width: 100%;height: 100%;
+			}
+			
+            .top{
+            	height: 12%;
+            	border: 0px solid #FFFFFF;
+            }
+            .a{height: 60%;width: 100%;}
+            img.fenlei{width: 30%;}
+            .yxdl{position:absolute;left:38%;font-size: 24px;top: 2.3%;
+            height: 5%;}
+            .b{top: 60%;height: 40%;background: #FFFFFF;}
+            .button2{background: #000000;height:100%;width:49.5%;color: #FFFFFF;
+            	border: 0px solid #FFFFFF;font-size:20px;outline: none;}
+            .xiahuaxian1{position: absolute;top:11.6%;background: #FE6200;
+            	height: 0.5%;width: 49.3%;display: none;}
+            .xiahuaxian2{position: absolute;top:11.6%;background: #FE6200;
+            	height: 0.5%;width: 49.3%;left: 50.7%;display: none;}
+            
+            .shousuo{
+            	top: 12%;
+            	height: 8.5%;
+            	text-align:center;
+            	
+            }
+            textarea{position:absolute;top:13%;left:3%;border-radius:28px;
+            line-height:52px;height:6.7%;width:94%;background:#313131;
+            font-size: 25px;outline: none;}
+            img.tubiao{position:absolute;top:13%;left: 80%;height:6.7%;}
+            
+            .xuanxiang{
+            	top: 20.5%;
+            	height: 5.9%;
+            	background: #FFFFFF;
+            	text-decoration: none;
+            }
+            .button1{background: #000000;height:97%;width:33.3%;color: #FFFFFF;
+            	border: 1px solid #FFFFFF;font-size:22px;}
+            
+            .xiaoxi{
+            	top: 28.22%;
+            	height: 60.58%;
+            	position:absolute;
+            	width: 100%; 
+            	text-align:center;
+            }
+            .index{line-height:42px;height: 9.09%;border: 1px solid #FFFFFF;
+            font-size: 26px;}
+            .message{top:3%;height: 9.09%;border: 1px solid #FFFFFF;}
+            img.xiaoxi1{width: 100%;}
+            img.suo{width: 100%;display: none;}
+           
+            
+            .last{
+				top: 93%;
+				height: 7%;
+				
+            }
+            img.wodedingdan{width: 50%;position: absolute;top: 93%;height: 7%;
+            border: 1px solid #FFFFFF;}
+            img.wo{left:50%;width: 50%;position: absolute;top: 93%;height: 7%;
+            border: 1px solid #FFFFFF;}
+            
+            .mima{position: absolute;top:37%;left: 3%;width: 95%;height: 50%;
+            background: #999999;z-index:9999;;border-radius:35px;display: none;}
+            .button3{position: absolute;top:60%;left:35%;height:56px;width: 112px;
+            border-radius: 15px;background: #FFFFFF;font-size: 29px;font-weight: 700;
+            font-family: "宋体"}
+        </style>
+	</head>
+	<body>
+		
+		<script type="text/javascript">
+			function displayDate1()
+			{
+				document.getElementById('xiaoxi').style.display='block';
+       			document.getElementById('suo').style.display='none';
+       			document.getElementById('xiaoxi2').style.display='block';
+       			document.getElementById('suo2').style.display='none';
+       			document.getElementById('xiahuaxian1').style.display='block';
+       			document.getElementById('xiahuaxian2').style.display='none';
+       			document.getElementById('mima').style.display='none';
+    		}
+			function displayDate2()
+			{
+				document.getElementById('xiaoxi').style.display='none';
+       			document.getElementById('suo').style.display='block';
+       			document.getElementById('xiaoxi2').style.display='none';
+       			document.getElementById('suo2').style.display='block';
+       			document.getElementById('xiahuaxian1').style.display='none';
+       			document.getElementById('xiahuaxian2').style.display='block';
+    		}
+			
+			function mima(){
+				document.getElementById('mima').style.display='block';
+			}
+		</script>
+		
+		<div class="mima" id="mima">
+			<textarea name="shurumima" rows="1" maxlength="15" placeholder="&nbsp;&nbsp;&nbsp;请输入密码" style="height: 14%;border-radius: 0;color: #000000;"></textarea>
+			<button class="button3">确定</button>
+		</div>
+		
+		<div class="top">
+			<div class="a">
+				<img src="fenlei.png" class="fenlei" alt="#" class="fenlei">
+				<div class="yxdl">游戏代练</div>
+			</div>
+			
+			<div class="b">
+				<button class="button2"onclick="displayDate1()">公开</button>
+				<div class="xiahuaxian1"id="xiahuaxian1"></div>
+				<button class="button2"onclick="displayDate2()">不公开</button>
+				<div class="xiahuaxian2"id="xiahuaxian2"></div>
+			</div>
+			
+		</div>
+		
+		<div class="shousuo">
+			<textarea name="shousuo" rows="1"maxlength="15" placeholder="&nbsp;订单/区服/发布人/标题"autofocus></textarea>
+			<img src="tubiao.png" alt="#" class="tubiao" />
+		</div>
+		
+		<div class="xuanxiang">
+			<button class="button1">&nbsp;游戏区服 ∨</button><button class="button1">&nbsp;综合排序 ∨</button><button class="button1">&nbsp;高级筛选 ∨</button>
+		</div>
+		
+		<div class="xiaoxi">
+			<div class="index">&nbsp;序号&nbsp;&nbsp;&nbsp;订单号 &nbsp;&nbsp;&nbsp;区服&nbsp;&nbsp;&nbsp;消息&nbsp;&nbsp;&nbsp;价格&nbsp;&nbsp;&nbsp;时间&nbsp;</div>
+			<div class="message">
+				<img src="anzuo.png" class="xiaoxi1" alt="#" id="xiaoxi"/>
+				<img src="suoanzuo.png" alt="#" class="suo" id="suo" onclick="mima()"/>
+			</div>
+			<div class="message">
+				<img src="ios.png" class="xiaoxi1" alt="#" id="xiaoxi2"/>
+				<img src="suoios.png" alt="#" class="suo" id="suo2" onclick="mima()"/>
+			</div>
+			<div class="message"></div>
+			<div class="message"></div>
+			<div class="message"></div>
+			<div class="message"></div>
+			<div class="message"></div>
+			<div class="message"></div>
+			<div class="message"></div>
+			<div class="message"></div>
+		</div>
+		
+		<div class="last">
+			<div class="wodedingdan"><img src="wodedingdan.png" alt="#" class="wodedingdan" /></div><div class="wo"><img src="wo.png" alt="#" class="wo" /></div>
+		</div>
+		
+	</body>
+</html>

@@ -64,8 +64,8 @@ a{color: #FFFFFF;text-decoration:none;position: absolute;top: 20%;}
 	z-index: -1;
 }
 .duihuanshuangping,.yiyuanduobao{position:absolute;top: 2%;z-index: 9;}
-.duihuanshuangping{left: 9%;width: 20%;background: #000000;font-weight:700;font-size: 18px;}
-.yiyuanduobao{left: 40%;width: 20%;font-weight:700;font-size: 18px;background: #1A1A1A;}
+.duihuanshuangping{left: 9%;width: 20%;background: #000000;font-weight:700;font-size: 12px;}
+.yiyuanduobao{left: 40%;width: 20%;font-weight:700;font-size: 12px;background: #1A1A1A;}
 .xiahuaxian1,.xiahuaxian2{
 	position: absolute;top:32.6%;background: #FE6200;
     display: block;height: 0.3%;width: 31%;display: none;
@@ -115,7 +115,7 @@ a{color: #FFFFFF;text-decoration:none;position: absolute;top: 20%;}
 	z-index: 1;  
 }
 .saishi,.zixun,.shangcheng2,.jingchai,.wo{
-	width:19.5%;
+	width:19.3%;
 	height: 100%;
 	border: 1px solid #6D6D72;
 }

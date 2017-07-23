@@ -14,7 +14,6 @@ a{color: #FFFFFF;text-decoration:none;position: absolute;top: 20%;}
 	position: absolute;
 	top: 0;
 	height: 7.55%;
-	
 	}
 
 .shangcheng{position: relative;left: 48%;}
@@ -25,14 +24,14 @@ a{color: #FFFFFF;text-decoration:none;position: absolute;top: 20%;}
 .second{
 	background: #1a1a1a;
 	position: absolute;
-	top: 7.55%;
+	top: 8.55%;
 	height: 3.78%;width: 100%;
 	z-index: 1;
 	}
-.heitu{position:relative;left: 25%;top:10%;height: 80%;}
-.baitu{position:absolute;left: 80%;top:10%;height: 80%;}
-.hei{left: 32%;}
-.bai{left: 87%;}	
+.heitu{position:relative;left: 25%;top:0;height: 100%;}
+.baitu{position:absolute;left: 80%;top:0;height: 100%;}
+.hei{left: 32%;	font-size: 10px;top:2px;}
+.bai{left: 87%;	font-size: 10px;top:2px;}	
 	
 	
 	

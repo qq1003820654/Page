@@ -1,0 +1,122 @@
+*{
+	margin: 0px;padding: 0px;border: 0;
+}
+body{
+	position: absolute;
+	border: 1px solid #625e5f;
+	background: #000000;color: #FFFFFF;
+	width: 100%;height: 100%;
+}
+
+a{color: #FFFFFF;text-decoration:none;position: absolute;top: 20%;}
+
+.first{
+	position: absolute;
+	top: 0;
+	height: 7.55%;
+	
+	}
+
+.shangcheng{position: relative;left: 48%;}
+
+	
+
+	
+.second{
+	background: #1a1a1a;
+	position: absolute;
+	top: 7.55%;
+	height: 3.78%;width: 100%;
+	z-index: 1;
+	}
+.heitu{position:relative;left: 25%;top:10%;height: 80%;}
+.baitu{position:absolute;left: 80%;top:10%;height: 80%;}
+.hei{left: 32%;}
+.bai{left: 87%;}	
+	
+	
+	
+	
+.third{
+	background: #1a1a1a;
+	position: absolute;
+	top: 11.33%;
+	height: 20.11%;
+	z-index: -1;
+	}
+.thirdtu{position:relative;left: 1%;width: 97.5%;height: 100%;}
+
+
+
+
+
+
+
+
+.fourth{
+	position: absolute;
+	top: 31.44%;
+	height: 70%;
+	color: #FFFFFF;
+	}
+.bgtu{
+	width: 100%;
+	height: 87%;
+	z-index: -1;
+}
+.duihuanshuangping,.yiyuanduobao{position:absolute;top: 2%;z-index: 9;}
+.duihuanshuangping{left: 9%;width: 20%;background: #000000;font-weight:700;font-size: 18px;}
+.yiyuanduobao{left: 40%;width: 20%;font-weight:700;font-size: 18px;background: #1A1A1A;}
+.xiahuaxian1,.xiahuaxian2{
+	position: absolute;top:32.6%;background: #FE6200;
+    display: block;height: 0.3%;width: 31%;display: none;
+    z-index: 999;
+}
+.xiahuaxian1{left: 2%;}
+.xiahuaxian2{left: 32.8%;}
+
+.tu20{
+	position:absolute;
+	left:3%;top: 7%;height: 70%;width: 28%;
+}
+.tu201{
+	position: relative;
+	padding-top: 5px;
+	width: 100%;
+}
+
+.tu21{
+	position:absolute;
+	left:33%;top: 7%;height: 70%;width: 29%;
+}
+.tu211{
+	position: relative;
+	padding-top: 5px;
+	width: 100%;
+}
+
+.tu22{
+	position:absolute;
+	left:66%;top: 6.8%;height: 70%;width: 31.5%;
+}
+.tu221{
+	position: relative;
+	padding-top: 8px;
+	width: 100%;
+}
+
+
+	
+.fifth{
+	top: 92.3%;
+	height: 7.5%;
+	position: absolute;
+	border: 1px solid #6D6D72;
+	
+	z-index: 1;  
+}
+.saishi,.zixun,.shangcheng2,.jingchai,.wo{
+	width:19.5%;
+	height: 100%;
+	border: 1px solid #6D6D72;
+}

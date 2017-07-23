@@ -25,7 +25,7 @@ body{
 }
 
 .saishixingxi,.guizhe,.duizhengbiao,.liaotianshi{
-	font-size: 25px;top: 5%;width: 24.8%;height: 100%;
+	font-size: 22px;top: 5%;width: 24.8%;height: 100%;
 	background: #000000;color: #FFFFFF;outline: none;
 	}
 .xiahuaxian1,.xiahuaxian2,.xiahuaxian3,.xiahuaxian4{
@@ -33,8 +33,8 @@ body{
     display: none;height: 0.5%;width: 24.8%;
 }
 .xiahuaxian2{left: 25.2%;}
-.xiahuaxian3{left: 50.3%;}
-.xiahuaxian4{left: 75.2%;}
+.xiahuaxian3{left: 50.4%;}
+.xiahuaxian4{left: 75.4%;}
 			
 .third{
 	top: 13.58%;
@@ -43,7 +43,7 @@ body{
 .hzwzry{
 	width: 100%;
 }
-.renshu{position: absolute;left: 87%;top:17.3%;height: 3%;width: 5%;}
+.renshu{font-size: 10px;position: absolute;left: 86%;top:17.3%;height: 3%;width: 5%;}
 			
 .fourth{
 	
@@ -53,10 +53,10 @@ body{
 
 .fourth img{position:relative;height:13%;width:100%;}
 .hua1,.hua2{top:2%;}
-.duihuakuang{top:59.3%;}
+.duihuakuang{top:59.3%;width:100%;}
 .kuang1{position:absolute;background: #333333;border-radius: 3px;outline: none;
 top:86.3%;left:17.2%;width: 69.5%;font-size: 25px;line-height: 35px;}
-.fasong{position:absolute;top:85%;left:88%;height:50px;}
+.fasong{position:absolute;top:85.5%;left:88%;height:45px;}
 			
 .fifth{
 	font-size:0;
@@ -64,7 +64,7 @@ top:86.3%;left:17.2%;width: 69.5%;font-size: 25px;line-height: 35px;}
 	height:6% ;
 }
 .baomingrengshu,.guanzhu,.likebaoming{
-	width: 32.85%;
+	width: 32.5%;
 	border: 1px solid #6D6D72;
 	
 }

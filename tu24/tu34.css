@@ -1,0 +1,82 @@
+*{
+	margin: 0px;padding: 0px;border: 0;height: 100%;
+}
+body{
+	
+	border: 1px solid #FFFFFF;
+	background: #000000;color: #FFFFFF;
+	width: 100%;height: 100%;
+}
+.first{
+	border: none;
+	height: 8.88%;
+	
+}
+.fanhui{position:absolute;top: 1.5%;left: 7%;width:20%;font-size: 80px;height: 8.88%;}
+.first img{position:relative;top:0;left: 41%;}
+
+			
+.second{
+	top: 8.88%;
+	height: 4.7%;
+	font-size:1px;
+	background: #FFFFFF;
+	border:0;
+}
+
+.saishixingxi,.guizhe,.duizhengbiao,.liaotianshi{
+	font-size: 50px;top: 5%;width: 24.8%;height: 100%;
+	background: #000000;color: #FFFFFF;outline: none;
+	}
+.xiahuaxian1,.xiahuaxian2,.xiahuaxian3,.xiahuaxian4{
+	position: absolute;top:13.4%;background: #FE6200;
+    display: none;height: 0.5%;width: 24.8%;
+}
+.xiahuaxian2{left: 25.2%;}
+.xiahuaxian3{left: 50.3%;}
+.xiahuaxian4{left: 75.2%;}
+			
+.third{
+	top: 13.58%;
+	height: 5.89%;
+}
+.hzwzry{
+	width: 100%;
+}
+.renshu{position: absolute;left: 87%;top:17.3%;height: 3%;width: 5%;}
+			
+.fourth{
+	
+	top: 19.47%;
+	height: 74.2%;
+}
+
+.fourth img{position:relative;height:13%;width:100%;}
+.hua1,.hua2{top:2%;}
+.duihuakuang{top:59.3%;}
+.kuang1{position:absolute;background: #333333;border-radius: 6px;outline: none;
+top:86.3%;left:17.2%;width: 69.5%;font-size: 50px;}
+.fasong{position:absolute;top:85%;left:88%;height:100px;}
+			
+.fifth{
+	font-size:0;
+	top: 93.67%;
+	height:6% ;
+}
+.baomingrengshu,.guanzhu,.likebaoming{
+	width: 32.85%;
+	border: 1px solid #6D6D72;
+	
+}
+
+
+
+.baoming{position: absolute;width: 94%;height: 32%;top: 40%;left: 3%;
+z-index:9999;background: #333333;font-weight: 700;font-family:"仿宋";display: none;}
+.quxiao{position:relative;top:3%;left: 90%;font-size: 80px;}
+.sqzd,.cjzd{position: absolute;top:40%;height:112px;width: 300px;
+            border-radius: 30px;background: #FFFFFF;font-size: 62px;font-weight: 700;
+            font-family: "微软雅黑";outline: none;
+}
+.sqzd{left: 55%;}
+.cjzd{left: 8%;}

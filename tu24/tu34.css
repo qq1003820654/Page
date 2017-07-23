@@ -74,7 +74,7 @@ top:86.3%;left:17.2%;width: 69.5%;font-size: 25px;line-height: 33px;}
 .baoming{position: absolute;width: 94%;height: 28%;top: 43%;left: 3%;
 z-index:9999;background: #333333;font-weight: 1000;font-family:"仿宋";display: none;}
 .quxiao{position:relative;top:0;left: 91.5%;width: 50px;font-size: 40px;}
-.sqzd,.cjzd{position: absolute;top:40%;height:40px;width: 115px;
+.sqzd,.cjzd{position: absolute;top:40%;height:40px;width: 120px;
             border-radius: 13px;background: #FFFFFF;font-size: 26px;font-weight:1000;
             font-family: "微软雅黑";outline: none;
 }

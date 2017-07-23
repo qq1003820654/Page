@@ -24,10 +24,11 @@ body{
 	border:0;
 }
 
-.saishixingxi,.guizhe,.duizhengbiao,.liaotianshi{
-	font-size: 18px;top: 5%;width: 24.5%;height: 100%;
+.saishixingxi,,.duizhengbiao,.liaotianshi{
+	font-size: 18px;top: 5%;width: 24.7%;height: 100%;
 	background: #000000;color: #FFFFFF;outline: none;
 	}
+
 .xiahuaxian1,.xiahuaxian2,.xiahuaxian3,.xiahuaxian4{
 	position: absolute;top:13.4%;background: #FE6200;
     display: none;height: 0.3%;width: 24.8%;

@@ -74,9 +74,9 @@ top:86.3%;left:17.2%;width: 69.5%;font-size: 25px;line-height: 33px;}
 .baoming{position: absolute;width: 94%;height: 32%;top: 40%;left: 3%;
 z-index:9999;background: #333333;font-weight: 700;font-family:"仿宋";display: none;}
 .quxiao{position:relative;top:3%;left: 90%;font-size: 40px;}
-.sqzd,.cjzd{position: absolute;top:40%;height:56px;width: 150px;
-            border-radius: 15px;background: #FFFFFF;font-size: 31px;font-weight: 700;
+.sqzd,.cjzd{position: absolute;top:40%;height:50px;width: 125px;
+            border-radius: 13px;background: #FFFFFF;font-size: 29px;font-weight: 600;
             font-family: "微软雅黑";outline: none;
 }
-.sqzd{left: 55%;}
-.cjzd{left: 8%;}
+.sqzd{left: 53%;}
+.cjzd{left: 5%;}

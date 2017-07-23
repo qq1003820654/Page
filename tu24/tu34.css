@@ -25,7 +25,7 @@ body{
 }
 
 .saishixingxi,.guizhe,.duizhengbiao,.liaotianshi{
-	font-size: 18px;top: 5%;width: 24.7%;height: 100%;
+	font-size: 18px;top: 5%;width: 24.75%;height: 100%;
 	background: #000000;color: #FFFFFF;outline: none;
 	}
 .xiahuaxian1,.xiahuaxian2,.xiahuaxian3,.xiahuaxian4{
@@ -71,7 +71,7 @@ top:86.3%;left:17.2%;width: 69.5%;font-size: 25px;line-height: 33px;}
 
 
 
-.baoming{position: absolute;width: 94%;height: 28%;top: 43%;left: 3%;
+.baoming{position: absolute;width: 94%;height: 28%;top: 43.3%;left: 3%;
 z-index:9999;background: #333333;font-weight: 1000;font-family:"仿宋";display: none;}
 .quxiao{position:relative;top:0;left: 91.5%;width:43px;font-size: 40px;}
 .sqzd,.cjzd{position: absolute;top:40%;height:40px;width: 120px;

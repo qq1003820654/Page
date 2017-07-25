@@ -1,0 +1,296 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>游戏代练</title>
+
+<style>
+	#a,#b,#c{
+		width:90%;
+		height:45%;
+		background-color:gray;    
+		margin: auto;
+		position: absolute;
+		z-index:3;
+/*		top: 0;*/
+		bottom: 10%;
+		left: 4%;
+		right: 4%;
+		display:none;
+		border-radius: 10px;
+	}
+	
+	button{
+		color: white;
+		background-color: transparent;
+		border:0;
+	}
+	input{
+		background-color: transparent;
+		border: 0;
+	}
+	p,span{
+		color:white;
+	}
+	html{
+		background-color:black;
+		font-size: 11px;
+	}
+	body{
+		margin-left: 0px;
+	        margin-top: 0px;
+ 	        margin-right: 0px;
+         	margin-bottom: 0px;
+	}
+	div{
+		margin: 0;
+	}
+	.changgui{
+		height: 60px;
+	}
+	.changgui,.yikuai,.erkuai,.yaoqiu{
+		border: solid 1px;
+		border-color: white;
+		margin-top: 3%;
+	}
+	.yikuai,.erkuai{
+	        height:6%;
+	}
+	.yikuai span{	
+		font-size: 30px;
+		display:inline;
+		margin-left:60px;
+	}
+	.yikuai button{
+		font-size:30px;
+		position: absolute;
+		right:0;
+	}
+
+	.erkuai{
+	        padding-top:0;  
+	    
+	}
+	.erkuai span{
+                display:inline;
+		width:160px;
+		font-size:30px;
+		margin-left:60px;
+		height:20px;
+		
+	}
+	.erkuai input{ 
+		display: inline;
+		width:500px;
+		height:50px;
+		margin-top:0;
+		-webkit-box-sizing:border-box;
+		box-sizing:border-box;
+		
+	}
+		
+	.yaoqiu{
+		width:100%;
+		height:190px;
+	}
+	.yaoqiu span{
+		margin-top: 0;
+		margin-bottom: 0;
+		font-size:30px;
+		margin-left:1%;
+	}
+	.yaoqiu input{
+		width: 100%;
+		height:50px;
+		color: white;
+		font-size:10px;
+		margin:0;
+	}
+	
+	
+	.foot{
+	        position: fixed;
+		bottom: 0;
+		height: 120px;
+		width: 100%;
+		padding:0;
+	}
+	.foot  img{
+		float: left;
+		width: 50%;
+		height: 100%;
+		margin:0;
+	}
+	option,select{
+		font-size:43px;
+	}
+	::-webkit-input-placeholder { 
+        color: gray; 
+		font-size: 30px;
+	}
+</style>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+</head>
+
+<body>
+
+<div style="width:100%;height:100%">
+	<div class="dailian" style="width:100%;height:auto;">
+		<button style="font-size:45px;" onclick="fanhui()"><</button>
+		<span style="margin-left:28%;font-size:50px;margin-top:20px;">游戏代练</span>
+	</div>
+	<div class="changgui"><p style="margin:0;text-align:center;font-size:40px;">常规发布</p></div>
+
+
+
+	<div class="yikuai">
+		<span style="width:60px;">游戏：</span>
+		<span id="game" style="width:160px;color:white;"></span>
+		<button onclick="shield()">></button>
+	</div>
+	<div class="yikuai">
+		<span>系统：</span>
+		<span id="system" style="color:white;"></span>
+		<button onclick="shield1()">></button>
+	</div>
+	<div class="yikuai">
+		<span>区服：</span>
+		<span id="range" style="color:white;"></span>
+		<button onclick="shield2()">></button>
+	</div>
+	<div class="yikuai">
+		<span>指定人密码：</span>
+		<span id="people" style="color:white;"></span>
+		<button onclick="shield3()">></button>
+	</div>
+
+
+
+
+	<div class="erkuai">
+		<span>订单价格：</span>
+		<input type="text" placeholder="必填 收30%的平台服务费30元封顶">
+	</div>
+	<div class="erkuai">
+		<span>代练时间：</span>
+		<input type="text" placeholder="必填（单位：小时）">
+	</div>
+	<div class="erkuai">
+		<span>安全保证金：</span>
+		<input type="text" placeholder="必填（10-10000封神币之间）">
+	</div>
+	<div class="erkuai">
+		<span>游戏账号：</span>
+		<input type="text" placeholder="必填 请输入游戏账号">
+	</div>
+	<div class="erkuai">
+		<span>游戏密码：</span>
+		<input type="text" placeholder="必填 请输入游戏密码" type="password">
+	</div>
+	<div class="erkuai">
+		<span>游戏昵称：</span>
+		<input type="text" placeholder="必填 请输入游戏昵称">
+	</div>
+
+
+
+	<div class="yaoqiu">
+		<span>代练要求：</span>
+		<input type="text">
+	</div>
+	<div class="foot">
+		<a href="../84-85/2.5.html"><img src="3.PNG"></a>
+		<img src="4.PNG">
+	</div>
+
+</div>
+<div id="a">
+         <button style="margin-top:20px;margin-left:30px;float:left;font-size:30px;width:15%;border-radius:5px;background-color:white;color:black;" onclick="cancel_shield()">取消</button>
+	 <button style="margin-top:20px;margin-right:30px;float:right;font-size:30px;width:15%;border-radius:5px;background-color:white;color:black;" id="queding">确定</button>
+	    <p style="margin-top:30%; font-size:30px;text-align:center;color:white;">选择游戏</p>
+		<select style="margin-left:20%;margin-top:10%;width:60%;" id="select1">
+			<option value="DOTA2">DOTA2</option>
+			<option value="英雄联盟">英雄联盟</option>
+			<option value="王者荣耀">王者荣耀</option>
+		</select>	
+	
+</div>
+
+<div id="b">
+		<button style="margin-top:20px;margin-left:30px;float:left;font-size:30px;width:15%;border-radius:5px;background-color:white;color:black;" onclick="cancel1()">取消</button>
+	 <button style="margin-top:20px;margin-right:30px;float:right;font-size:30px;width:15%;border-radius:5px;background-color:white;color:black;" id="queding1">确定</button>
+	    <p style="margin-top:30%; font-size:30px;text-align:center;color:white;">选择系统</p>
+	       <select style="margin-left:20%;margin-top:10%;width:60%;" id="select2">
+			<option value="苹果">苹果</option>
+			<option value="安卓">安卓</option>
+		</select>	
+	
+</div>
+
+<div id="c">
+	<button style="margin-top:20px;margin-left:30px;float:left;font-size:30px;width:15%;border-radius:5px;background-color:white;color:black;" onclick="cancel2()">取消</button>
+	 <button style="margin-top:20px;margin-right:30px;float:right;font-size:30px;width:15%;border-radius:5px;background-color:white;color:black;" id="queding2">确定</button>
+	    <p style="margin-top:30%; font-size:30px;text-align:center;color:white;">选择游戏区</p>
+		<select style="margin-left:20%;margin-top:10%;width:60%;" id="select3">
+			<option value="默认区">默认区</option>
+			<option value="1区">1区</option>
+			<option value="2区">2区</option>
+		</select>	
+	
+</div>
+<script type="text/javascript">
+function fanhui(){
+	window.location.href="../75/youxidailian.html";
+}
+	
+function shield(){
+    var l = document.getElementById("a");
+    l.style.display = "block";
+}
+function cancel_shield(){
+    var l = document.getElementById("a");
+    l.style.display = "none";
+}
+$("#queding").click(function(){
+    var x = $('#select1 option:selected').text();	
+	$("#game").text(x);
+	var l = document.getElementById("a");
+    l.style.display = "none";
+});
+	
+function shield1(){
+    var l = document.getElementById("b");
+    l.style.display = "block";
+}
+function cancel1(){
+    var l = document.getElementById("b");
+    l.style.display = "none";
+}
+$("#queding1").click(function(){
+    var y = $('#select2 option:selected').text();	
+	$("#system").text(y);
+	var l = document.getElementById("b");
+    l.style.display = "none";
+});	
+	
+	
+function shield2(){
+    var l = document.getElementById("c");
+    l.style.display = "block";
+}
+function cancel2(){
+    var l = document.getElementById("c");
+    l.style.display = "none";
+}
+$("#queding2").click(function(){
+    var z = $('#select3 option:selected').text();	
+	$("#range").text(z);
+	var l = document.getElementById("c");
+    l.style.display = "none";
+});	
+function shield3(){
+    window.location.href="../80/80.html";     
+}
+</script>
+</body>
+</html>

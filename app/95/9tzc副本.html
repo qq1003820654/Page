@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.js"></script>
+
+    <title>游戏代练</title>
+</head>
+<body>
+<style type="text/css">
+    body{
+        background-color: black;
+    }
+
+    .alltitle{
+        font-size: 29px;
+        color: white;
+        font-weight: bold;
+
+    }
+    .head{
+        padding-top: 20px;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .fenlei img{
+        position: relative;
+        top: 20px;
+        left: -300px;
+
+    }
+    .choose{
+        font-size: 29px;
+        font-weight: bold;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .choose a{
+        text-decoration: none;
+        color: white;
+        display: inline-block;
+        width: 49%;
+        text-align: center;
+    }
+    .sousuolan{
+
+        width: 100%;
+        text-align: center;
+    }
+    input{
+        font-weight: bold;
+        font-size: 29px;
+        color: gray;
+        width: 90%;
+        height: 100px;
+        border-radius: 50px;
+        background-color: #343434;
+        border: transparent;
+        margin-bottom: 10px;
+        padding:0px 50px 0px 50px;
+    }
+    div.sousuolan img{
+        height: 80px;
+        width: 100px;
+        float: right;
+        position: absolute;
+        right: 70px;
+        top: 210px;
+    }
+    .table{
+        font-size: 29px;
+        color: white;
+        font-weight: bold;
+
+    }
+    table{
+        border: 1px solid white;
+        width: 100%;
+        text-align: center;
+        height: 80px;
+    }
+
+    .paixu{
+        text-align: center;
+        color: white;
+        font-size: 29px;
+        font-weight: bold;
+        display: block;
+    }
+
+
+
+
+
+
+
+
+    .bottom-button{
+        width: 100%;
+        text-align: center;
+        position: relative;
+        top: 100px;
+    }
+    div.bottom-button img{
+        margin-top:100px;
+        width: 49%;
+    }
+    .me{
+        position: relative;
+        left: -11px;
+        top: -6px;
+        padding-right: -60px;
+
+    }
+    .dingdan{
+        border-bottom: 2px solid black;
+    }
+
+</style>
+
+<script >
+    $(function(){
+
+
+        $(".unpublic").click(function(){
+            $(this).css("border-bottom","orange 2px solid");
+            $(".public").css("border-bottom","transparent");
+
+
+
+
+        });
+        $(".public").click(function(){
+            $(this).css("border-bottom","orange 2px solid");
+            $(".unpublic").css("border-bottom","transparent");
+
+
+
+
+        });
+    });
+
+
+
+
+    function click(id) {
+        document.getElementById(1).style.color="white";
+        document.getElementById(2).style.color="white";
+        document.getElementById(3).style.color="white";
+        document.getElementById(4).style.color="white";
+        document.getElementById(5).style.color="white";
+        document.getElementById(id).style.color="red";
+    }
+
+
+
+</script>
+<div class="all">
+    <div class="head">
+        <span class="fenlei"><a href="#nowhere"><img src="img/fenlei.png"></a></span>
+        <span class="alltitle">游戏代练</span>
+
+    </div>
+    <div class="choose">
+        <span style="border-bottom: orange 2px solid;border-right: 1px white solid;" class="public"><a href="#nowhere">公开</a></span>
+        <span class="unpublic"><a href="#nowhere">不公开</a></span>
+    </div>
+    <div class="sousuolan">
+        <input type="text" placeholder="订单/曲服/发布人/标题" class="sousuo">
+        <span class="suosouimg"><a href="#nowhere"><img src="img/sousuo.png"></a></span>
+    </div>
+    <div class="table">
+        <table><tr>
+            <td  style="border-right: 1px white solid;" >游戏区服<span><img src="img/xiangxia.png" style="width: 40px; height:40px;position: relative;top:10px;"></span></td>
+            <td  style="border-right: 1px white solid;" >综合排序<span><img src="img/xiangxia.png" style="width: 40px; height:40px;position: relative;top:10px;"></span></td>
+            <td  、>高级筛选<span><img src="img/xiangxia.png" style="width: 40px; height:40px;position: relative;top:10px;"></span></td>
+        </tr>
+
+        </table>
+    </div>
+</div>
+
+<hr/>
+<div >
+    <span id="1" class="paixu" onclick="click(1)">综合排序</span>
+</div>
+<hr/>
+<div>
+    <span id="2" class="paixu" onclick="click(2)">价格由低到高</span>
+</div>
+<hr/>
+<div>
+    <span id="3" class="paixu" onclick="click(3)">价格由高到低</span>
+</div>
+<hr/>
+<div>
+    <span id="4" class="paixu" onclick="click(4)">保证金由低到高</span>
+</div>
+<hr/>
+<div>
+    <span id="5" class="paixu" onclick="click(5)">保证金由高到低</span>
+</div>
+<hr/>
+
+<div class="bottom-button">
+
+    <span><a href="#nowhere"><img class="dingdan" src="img/dingdan.png"></a></span>
+    <span><a href="#nowhere"><img class="me" src="img/wo.png"></a></span>
+</div>
+
+</div>
+</div>
+</body>
+</html>

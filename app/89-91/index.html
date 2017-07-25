@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+	<head lang="zh-CN">
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/N71.css" />
+		<title>订单详情</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> 
+	</head>
+
+	<body marginheight="0px" marginwidth="0px">
+		<div ng-controller="photos">
+			
+			
+			
+			<br /><br />
+            <table style="background-color: #292929; width: 100%;" >
+            
+            <button class="test" id="upload">
+            	<span style="color: white; font-size: 18px;" id="info">请上传代练图片</span>
+            </button>
+            
+            <tr>
+            	<td><div id="A"></div> </td>
+            	<td><div id="B"></div> </td>
+            </tr>
+            <tr>
+            	<td><div id="C"></div> </td>
+            	<td><div id="D"></div> </td>
+            </tr>
+            <tr>
+            	<td><div id="E"></div> </td>
+            	<td><div id="F"></div> </td>
+            </tr>
+			
+
+            </table>
+			
+			
+		</div>
+		
+		<a href="javascript:;" class="file" id="whit">
+				  <span  style="margin:0 auto;width:100%; display:block;line-height: 30px;">从手机相册选择</span>
+				  <input type="file" onchange="preview(this)" />
+			</a>
+		
+		<button id="white" style=" position:absolute; bottom:0;font-size: 18px;background-color: white;color: black;width: 100%;height: 30px;">取消</button>
+<a href="../84-85/2.5.html">
+		<button id="orange" style=" position:absolute; bottom:0;font-size: 22px;width: 100%;">提交</button>
+</a>
+
+
+		<script type="text/javascript" src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+		<script src="http://apps.bdimg.com/libs/angular.js/1.4.6/angular.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				$("#whit").hide();
+				$("#white").hide();
+
+				
+				$("#upload").click(function(){
+					$("#orange").hide();
+				$("#white").show();
+				$("#whit").show();
+			});
+			
+			
+			$("#white").click(function(){
+				$("#white").hide();
+				$("#whit").hide();
+				$("#orange").show();
+			
+			});
+			$("#whit").click(function(){
+				$("#white").hide();
+				$("#whit").hide();
+				$("#orange").show();
+				$("#info").hide();
+			
+			});
+			
+			
+			});
+				
+				
+			function preview(file) { //预览图片得到图片base64
+			
+				var prevA = document.getElementById('A');
+				if(file.files && file.files[0]) {
+					var reader = new FileReader();
+					reader.onload = function(evt) {
+						prevA.innerHTML = '<img src="' + evt.target.result + '" />';
+					}
+					reader.readAsDataURL(file.files[0]);
+				} 
+				
+				var prevB = document.getElementById('B');
+				if(file.files && file.files[0]) {
+					var reader = new FileReader();
+					reader.onload = function(evt) {
+						prevB.innerHTML = '<img src="' + evt.target.result + '" />';
+					}
+					reader.readAsDataURL(file.files[0]);
+				} 
+				
+				var prevC = document.getElementById('C');
+				if(file.files && file.files[0]) {
+					var reader = new FileReader();
+					reader.onload = function(evt) {
+						prevC.innerHTML = '<img src="' + evt.target.result + '" />';
+					}
+					reader.readAsDataURL(file.files[0]);
+				} 
+				
+				var prevD = document.getElementById('D');
+				if(file.files && file.files[0]) {
+					var reader = new FileReader();
+					reader.onload = function(evt) {
+						prevD.innerHTML = '<img src="' + evt.target.result + '" />';
+					}
+					reader.readAsDataURL(file.files[0]);
+				} 
+				
+				var prevE = document.getElementById('E');
+				if(file.files && file.files[0]) {
+					var reader = new FileReader();
+					reader.onload = function(evt) {
+						prevE.innerHTML = '<img src="' + evt.target.result + '" />';
+					}
+					reader.readAsDataURL(file.files[0]);
+				} 
+				
+				var prevF = document.getElementById('F');
+				if(file.files && file.files[0]) {
+					var reader = new FileReader();
+					reader.onload = function(evt) {
+						prevF.innerHTML = '<img src="' + evt.target.result + '" />';
+					}
+					reader.readAsDataURL(file.files[0]);
+				} 
+				
+			}
+			
+			
+			
+			
+			
+			
+			
+		</script>
+	</body>
+
+</html>

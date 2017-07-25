@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<title>3</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		body{
+			background-color: #1a1a1a;
+		}
+		.head{
+			text-align: center;
+			color: white;
+		}
+		#title{
+			font-size: 60px;
+			top: 20%;
+			position: relative;
+			font-weight: 200;
+		}
+		#back{
+			position: absolute;
+			left: 0.5%;
+			background-color: transparent;
+			font-size: 90px;
+			color: white;
+			border: 0;
+			font-weight: 200;
+		}
+		.mainli{
+			position: relative;
+			box-sizing: border-box;
+		}
+	    .write{
+	    	position: absolute;
+	    	left: 0; 
+	    	background-color: #404040;
+	    	color: white;
+	    	border: 0;    
+	    	font-size: 38px;
+	    }
+	    .foot{
+	    	text-align: center;
+	    	margin-top: 12%;
+	    }
+	    #footbu{
+	    	background-color: white;
+	    	color: black;
+	    	border-radius: 28px;
+	    	font-size: 55px;
+	    }
+	    p{
+	    	color: red;
+	    	font-size: 25px;
+	    	font-weight: bold;
+	    }
+	</style>
+</head>
+<body>
+	<script type="text/javascript">
+		function fanhui76(){
+			window.location.href="../76-79/76.html";
+		}
+	</script>
+	
+<form action="#" method="get" onsubmit="return check()">  
+    <div class="head" id="head">
+        <button id="back" onclick="fanhui76()"><</button>
+      	<span id="title">指定人密码</span>
+    </div>
+
+    <div class="main" id="main">
+    	<ul id="mainul">
+		    <li class="mainli">
+		    	<input type="password" style="margin-top: 8%" class="write" placeholder="          请输入密码" id="password">
+		    </li>
+		    <li class="mainli" style="margin-top:11%">
+		    	<input type="password" class="write" placeholder="           请再次输入密码" id="pwdc">
+		    </li>
+		<p></p>
+	    </ul>
+    </div>
+    <div class="foot" id="foot">
+    	<button id="footbu" type="submit">确定</button>
+    </div>    
+
+
+    <script src="jquery.js"></script>
+    <script type="text/javascript">
+        $("body").css({"height":$(window).height(),"width":$(window).width()}); 
+    	$("#head").css({"height":$(window).height()*0.13,"width":$(window).width()}); 
+    	$("#main").css({"height":$(window).height()*0.19,"width":$(window).width()});
+    	$("#foot").css({"height":$(window).height()*0.2,"width":$(window).width()});
+    	$("#mainul").css({"height":$("#main").height(),"width":$(window).width()});
+    	$(".mainli").css({"height":$(window).height()*0.07,"width":$(window).width()});
+    	$("#back").css({"height":$("#head").height()*0.8,"width":$(window).width()*0.16});
+    	$(".write").css({"height":$(".mainli").height()-2,"width":$(window).width()});
+    	$("#footbu").css({"height":$(window).height()*0.07,"width":$(window).width()*0.25});
+	 
+
+function checkpwdc() {  
+    var check = false;  
+    var password = document.getElementById("password").value;  
+    var pwdc = document.getElementById("pwdc").value; 
+    var aInput = document.getElementsByTagName('input');
+    var pwd = aInput[0];
+    var pwd2 = aInput[1];
+    var aP = document.getElementsByTagName('p');
+    var pwd2_msg = aP[0];
+
+    if (pwd.value == "") {
+    	pwd2_msg.innerHTML = '<i class="err"></i>密码不能为空！';
+    } else {
+        	if (password != pwdc) {  
+            pwd2_msg.innerHTML = '<i class="err"></i>两次输入的密码不一致！';
+            check = false;  
+        } else {  
+            pwd2_msg.innerHTML = '<i class="err"></i>OK！';
+            check = true;  
+        }  
+    }
+    return check;  
+}  
+function check() {  
+    var check = checkpwdc() ;  
+    return check;  
+  
+}  
+    </script>
+
+</body>
+</html>

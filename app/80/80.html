@@ -84,7 +84,7 @@
 	    </ul>
     </div>
     <div class="foot" id="foot">
-    	<button id="footbu" type="submit">确定</button>
+    	<button id="footbu" type="submit" onclick="fanhui76()">确定</button>
     </div>    
 
 
@@ -116,10 +116,10 @@ function checkpwdc() {
     } else {
         	if (password != pwdc) {  
             pwd2_msg.innerHTML = '<i class="err"></i>两次输入的密码不一致！';
-            check = false;  
+            check = true;  
         } else {  
             pwd2_msg.innerHTML = '<i class="err"></i>OK！';
-            check = true;  
+            check = false;  
         }  
     }
     return check;  

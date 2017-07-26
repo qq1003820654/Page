@@ -38,9 +38,9 @@
 		<li><p>订单价格：80</p></li>
 		<li><p>代练时间：72/小时</p></li>
 		<li><p>安全保障金：100</p></li>
-		<li><p>游戏账号：1546××××××</p></li>
-		<li><p>游戏密码：××××××</p></li>
-		<li><p>游戏昵称：×××××</p></li>
+		<li><p id="youxizhnghao">游戏账号：1546××××××</p></li>
+		<li><p id="youximima">游戏密码：××××××</p></li>
+		<li><p id="youxinichen">游戏昵称：×××××</p></li>
 		<li id="cmt"><p>代练要求：钻石4/3星到王者1星</p></li>
 	</ul>
 	<p style="position: absolute;left: 5%">注：上号截图、代练完成截图、账号异常截图</p>
@@ -59,7 +59,7 @@
 	<input type="tel" maxlength="1">
 	<input type="tel" maxlength="1" id="lastpwd">
 	</div>
-	<button id="cfmbtn" disabled="true" onclick="window.location.href='../88/88.html'">确认支付</button>
+	<button id="cfmbtn" disabled="true">确认支付</button>
 </div>
 <script>
 	$("body").css({"height":$(window).height(),"width":$(window).width()}); 
@@ -81,6 +81,9 @@
 	$("#cfmbtn").click(function(){
 		$("#cfmtab").hide();
 		document.getElementById("subbtn").innerHTML="待提交";
+		document.getElementById("youxizhnghao").innerHTML="游戏账号：154654646";
+		document.getElementById("youximima").innerHTML="游戏密码：sahd4655465";
+		document.getElementById("youxinichen").innerHTML="游戏昵称：黑大帅";
 		$("#subbtn").attr("disabled",true);
 	});
 	$("#lastpwd").keyup(function(){

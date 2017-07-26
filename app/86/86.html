@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="js/jquery-3.1.1.min.js"></script>
+<title>26</title>
+<style>
+	*{margin: 0;padding: 0}
+	html,body{background-color: black;color: white;font-family: 微软雅黑}	
+	#back{position: absolute;left: 0;background-color: black;color: white;border: 0;font-size: 20px}
+	#top{text-align: center;font-size: 17px}
+	#main{font-size: 14px}
+	ul{list-style: none}
+	li{border: 1px solid white}
+	li p{position: absolute;left: 10%;margin-top: 3px}
+	#cmt p{left: 5%;margin-top: 10px}
+	#subbtn{background-color: #ff6600;color: white;border: 0;font-size: 20px}
+	#subbtn:active{background-color: #ffa366}
+	#cfmtab{position: fixed;left: 3%;top: 25%;background-color: #333333;border-radius: 30px;font-size: 17px;text-align: center;z-index: 99;display: none}
+	#cfmbtn{position: absolute;left: 50%;bottom: 8%;background-color: white;border: 0;border-radius: 10px;font-size: 18px}
+	#close{width: 50px;height: 50px;position: absolute;top: 10px;right: 10px;background-color: #333333;color: white;border: 0;border-radius: 50%;font-size: 40px}
+	#tel{position: relative;top:32%}
+	input[type="tel"]{border:0;width: 45px;height: 45px;font-size: 28px;text-align: center;line-height: 45px;color: red;background: black}
+	</style>
+</head>
+
+<body>
+<div id="top">
+	<button id="back" onclick="javascript:history.go(-1);">&lt;</button>
+	<p style="position: relative;top: 12px">订 单 详 情</p>
+</div>
+<div id="main">
+	<ul>
+		<li><p>游戏：王者荣耀</p></li>
+		<li><p>系统：安卓</p></li>
+		<li><p>区服：QQ165</p></li>
+		<li><p>订单价格：80</p></li>
+		<li><p>代练时间：72/小时</p></li>
+		<li><p>安全保障金：100</p></li>
+		<li><p>游戏账号：1546××××××</p></li>
+		<li><p>游戏密码：××××××</p></li>
+		<li><p>游戏昵称：×××××</p></li>
+		<li id="cmt"><p>代练要求：钻石4/3星到王者1星</p></li>
+	</ul>
+	<p style="position: absolute;left: 5%">注：上号截图、代练完成截图、账号异常截图</p>
+</div>
+<button id="subbtn">我 来 代 练</button>
+<div id="cfmtab">
+    <button id="close">×</button>
+	<p style="position: relative;top: 15%">请 支 付 保 证 金</p>
+	<p style="position: relative;top: 20%"><span style="font-size: 36px;font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', 'serif';color: red">100</span>封神币</p>
+	<p style="position: absolute;top: 45%;left: 10%">请输入支付密码</p>
+	<div id="tel">
+	<input type="tel" maxlength="1">
+	<input type="tel" maxlength="1">
+	<input type="tel" maxlength="1">
+	<input type="tel" maxlength="1">
+	<input type="tel" maxlength="1">
+	<input type="tel" maxlength="1" id="lastpwd">
+	</div>
+	<button id="cfmbtn" disabled="true" onclick="window.location.href='../88/88.html'">确认支付</button>
+</div>
+<script>
+	$("body").css({"height":$(window).height(),"width":$(window).width()}); 
+	$("#top").css({"height":$(window).height()*0.08,"width":$(window).width()}); 
+	$("#back").css({"height":$("#top").height(),"width":$(window).width()*0.15});
+	$("#main").css({"height":$(window).height()*0.86,"width":$(window).width()});
+	$("ul").css({"height":$('#main').height()*0.88,"width":$(window).width()});
+	$("li").css({"height":$('#main').height()*0.04,"width":$(window).width()-2,"marginBottom":$('#main').height()*0.04-3});
+	$("#cmt").css("height",$(window).height()*0.12);
+	$("#subbtn").css({"height":$(window).height()*0.06,"width":$(window).width()});
+	$("#cfmtab").css({"height":$(window).height()*0.45,"width":$(window).width()*0.94});
+	$("#cfmbtn").css({"height":$(window).height()*0.06,"width":$(window).width()*0.28,"marginLeft":$(window).width()*-0.14});
+	$("#subbtn").click(function(){
+		$("#cfmtab").show();
+	});
+	$("#close").click(function(){
+        $("#cfmtab").hide();
+    });
+	$("#cfmbtn").click(function(){
+		$("#cfmtab").hide();
+		document.getElementById("subbtn").innerHTML="待提交";
+		$("#subbtn").attr("disabled",true);
+	});
+	$("#lastpwd").keyup(function(){
+		if(isNaN(this.value)==false && this.value!=""){
+		$("#cfmbtn").attr("disabled",false);
+	}
+		else{
+		$("#cfmbtn").attr("disabled",true);	
+		}
+	});
+	(function(window, document){
+    var active = 0,
+        inputBtn = document.querySelectorAll("input");
+    for(var i = 0; i < inputBtn.length; i++){
+        inputBtn[i].addEventListener("click", function(){
+            inputBtn[active].focus();
+        }, false);
+        inputBtn[i].addEventListener("focus", function(){
+            this.addEventListener("keyup", listenKeyUp, false);
+        }, false);
+        inputBtn[i].addEventListener("blur", function(){
+            this.removeEventListener("keyup", listenKeyUp, false);
+        }, false);
+    }
+    function listenKeyUp(){
+        var beginBtn = document.querySelector("#beginBtn");
+        if(!isNaN(this.value) && this.value.length != 0){
+            if(active < 5) {
+                active += 1;
+            }
+            inputBtn[active].focus();
+        } else if(this.value.length == 0){
+            if(active > 0){
+                active -= 1;
+            }
+            inputBtn[active].focus();
+        }
+    }
+})(window, document);
+	</script>
+</body>
+</html>
